@@ -1,0 +1,11 @@
+# Copyright 2025 The Lynx Authors. All rights reserved.
+# Licensed under the Apache License Version 2.0 that can be found in the
+# LICENSE file in the root directory of this source tree.
+
+source 'https://rubygems.org'
+
+gem "cocoapods", '1.10.1'
+# lock public_suffix's version to avoid occasional failure in dependencies resolving
+gem "public_suffix", '5.0.4' if RUBY_VERSION < "3.0"
+gem "ffi", "1.16.3"
+gem "xcodeproj", "1.27.0"

@@ -1,0 +1,38 @@
+# Copyright 2025 The Lynx Authors. All rights reserved.
+# Licensed under the Apache License Version 2.0 that can be found in the
+# LICENSE file in the root directory of this source tree.
+
+
+source 'git@github.com:lynx-infra/Specs.git'
+source 'https://cdn.cocoapods.org/'
+
+platform :ios, '15.0'
+supports_swift_versions '>= 5.0', '< 6.0'
+project './ObjcEmptyProject.xcodeproj'
+#use_frameworks! :linkage => :static
+#inhibit_all_warnings!
+use_modular_headers!
+
+install!'cocoapods',:deterministic_uuids => false,
+                    :lock_pod_sources => false,
+                    :generate_multiple_pod_projects => true,
+                    :incremental_installation => true,
+                    :warn_for_multiple_pod_sources => false,
+                    :warn_for_unused_master_specs_repo => false
+
+post_install do |installer|
+  installer.pod_target_subprojects.flat_map { |p| p.targets }.each do |t|
+    t.build_configurations.each do |c|
+      c.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+    end
+  end
+end
+
+target 'ObjcEmptyProject' do
+  target 'ObjcEmptyProjectTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  
+end

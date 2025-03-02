@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JavaEmptyProject</string>
+    <string name="greeting">Hello World!</string>
+</resources>
