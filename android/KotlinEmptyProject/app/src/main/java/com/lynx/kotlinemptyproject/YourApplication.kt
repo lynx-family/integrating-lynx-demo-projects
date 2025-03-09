@@ -14,6 +14,7 @@ import com.lynx.service.image.LynxImageService
 import com.lynx.service.log.LynxLogService
 import com.lynx.tasm.LynxEnv
 import com.lynx.tasm.service.LynxServiceCenter
+import com.lynx.service.http.LynxHttpService
 
 class YourApplication : Application() {
     override fun onCreate() {
@@ -31,6 +32,7 @@ class YourApplication : Application() {
 
         LynxServiceCenter.inst().registerService(LynxImageService.getInstance())
         LynxServiceCenter.inst().registerService(LynxLogService)
+        LynxServiceCenter.inst().registerService(LynxHttpService)
 
         // register devtool service
         LynxServiceCenter.inst().registerService(LynxDevToolService)
