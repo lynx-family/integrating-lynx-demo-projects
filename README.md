@@ -14,5 +14,5 @@ This repository includes some demo projects of platform applications for getting
 
 [`JavaEmptyProject`]: ./android/JavaEmptyProject
 [`KotlinEmptyProject`]: ./android/KotlinEmptyProject
-[`ObjcEmptyProject`]: ./ios/ObjcEmptyProject
-[`SwiftEmptyProject`]: ./ios/SwiftEmptyProject
+[`ObjcEmptyProject`]: ./ios/HelloLynxObjc
+[`SwiftEmptyProject`]: ./ios/HelloLynxSwift
