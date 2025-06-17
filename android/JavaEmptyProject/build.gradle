@@ -3,3 +3,98 @@ plugins {
 alias(libs.plugins.android.application) apply false
     alias(libs.plugins.jetbrains.kotlin.android) apply false
 }
+
+ext {
+    zipDirectory = file("$rootDir/app/libs")
+    localMavenRepo = file("$rootDir/local-maven")
+}
+
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+task publishAllZips {
+    group = "publishing"
+    description = "Publish all Maven-formatted ZIP files to local Maven repository"
+
+    doLast {
+        localMavenRepo.mkdirs()
+
+        zipDirectory.eachFileMatch(~/.*\.zip/) { zipFile ->
+            println "Processing ZIP file: ${zipFile.name}"
+            publishMavenZip(zipFile)
+        }
+    }
+}
+
+def publishMavenZip(File zipFile) {
+    def tempDir = file("$buildDir/temp/${zipFile.name.replace('.zip', '')}")
+    tempDir.mkdirs()
+
+    copy {
+        from zipTree(zipFile)
+        into tempDir
+    }
+
+    def pomFiles = findFilesRecursively(tempDir, ~/.*\.pom/)
+
+    if (pomFiles.isEmpty()) {
+        println "WARNING: pom file is not found in ${zipFile.name}, skip publish"
+        return
+    }
+
+    pomFiles.each { pomFile ->
+        def (groupId, artifactId, version) = parsePom(pomFile)
+        
+        def artifactDir = file("$localMavenRepo/${groupId.replace('.', '/')}/$artifactId/$version")
+        artifactDir.mkdirs()
+        
+        def artifactFiles = findFilesRecursively(tempDir, ~/${artifactId}-${version}\..*/)
+        artifactFiles.each { artifactFile ->
+            copy {
+                from artifactFile
+                into artifactDir
+            }
+        }
+        
+        copy {
+            from pomFile
+            into artifactDir
+        }
+
+        println "Published ${groupId}:${artifactId}:${version} to local Maven repository"
+    }
+
+    tempDir.deleteDir()
+}
+
+def findFilesRecursively(File dir, Pattern pattern) {
+    def result = []
+
+    dir.eachFile { file ->
+        if (file.isDirectory()) {
+            result += findFilesRecursively(file, pattern)
+        } else if (pattern.matcher(file.name).matches()) {
+            result.add(file)
+        }
+    }
+
+    return result
+}
+
+def parsePom(File pomFile) {
+    def xml = new XmlParser().parse(pomFile)
+
+    def groupId = xml.groupId.text()
+    def artifactId = xml.artifactId.text()
+    def version = xml.version.text()
+
+    if (!groupId) {
+        groupId = xml.parent.groupId.text()
+    }
+
+    if (!version) {
+        version = xml.parent.version.text()
+    }
+
+    return [groupId, artifactId, version]
+}

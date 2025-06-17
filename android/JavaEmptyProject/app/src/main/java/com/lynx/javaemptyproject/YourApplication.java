@@ -35,7 +35,6 @@ public class YourApplication extends Application {
 
         LynxServiceCenter.inst().registerService(LynxImageService.getInstance());
         LynxServiceCenter.inst().registerService(LynxLogService.INSTANCE);
-
         // register devtool service
         LynxServiceCenter.inst().registerService(LynxDevToolService.getINSTANCE());
     }
