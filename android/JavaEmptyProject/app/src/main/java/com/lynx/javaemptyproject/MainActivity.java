@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.lynx.tasm.LynxView;
 import com.lynx.tasm.LynxViewBuilder;
+import com.lynx.xelement.XElementBehaviors;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private LynxView buildLynxView() {
         LynxViewBuilder viewBuilder = new LynxViewBuilder();
+        viewBuilder.addBehaviors(new XElementBehaviors().create());
         viewBuilder.setTemplateProvider(new DemoTemplateProvider(this));
         return viewBuilder.build(this);
     }

@@ -1,16 +1,17 @@
 source 'https://cdn.cocoapods.org/'
+source 'git@code.byted.org:lynx/Specs.git'
 
 platform :ios, '10.0'
 
 target 'Hello-Lynx' do
-  pod 'Lynx', '3.2.0', :subspecs => [
+  pod 'Lynx', '3.3.0-alpha.2', :subspecs => [
     'Framework',
   ]
 
   pod 'PrimJS', '2.12.0', :subspecs => ['quickjs', 'napi']
 
   # integrate image-service, log-service, and http-service
-  pod 'LynxService', '3.2.0', :subspecs => [
+  pod 'LynxService', '3.3.0-alpha.2', :subspecs => [
       'Image',
       'Log',
       'Http',
@@ -19,4 +20,6 @@ target 'Hello-Lynx' do
   # ImageService dependencies:
   pod 'SDWebImage','5.15.5'
   pod 'SDWebImageWebPCoder', '0.11.0'
+  pod 'XElement', '3.3.0-alpha.2'
+
 end
