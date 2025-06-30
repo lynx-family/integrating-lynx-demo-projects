@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import com.lynx.tasm.LynxView
 import com.lynx.tasm.LynxViewBuilder
+import com.lynx.xelement.XElementBehaviors
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,7 @@ class MainActivity : Activity() {
 
     private fun buildLynxView(): LynxView {
         val viewBuilder: LynxViewBuilder = LynxViewBuilder()
+        viewBuilder.addBehaviors(XElementBehaviors().create())
         viewBuilder.setTemplateProvider(DemoTemplateProvider(this))
         return viewBuilder.build(this)
     }

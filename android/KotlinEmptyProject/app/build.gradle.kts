@@ -68,13 +68,13 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // lynx dependencies
-    implementation("org.lynxsdk.lynx:lynx:3.2.0")
-    implementation("org.lynxsdk.lynx:lynx-jssdk:3.2.0")
-    implementation("org.lynxsdk.lynx:lynx-trace:3.2.0")
+    implementation("engineer.lynx.test2:lynx:3.3.0-alpha.5")
+    implementation("engineer.lynx.test2:lynx-jssdk:3.3.0-alpha.5")
+    implementation("engineer.lynx.test2:lynx-trace:3.3.0-alpha.5")
     implementation("org.lynxsdk.lynx:primjs:2.12.0")
 
     // integrating image-service
-    implementation("org.lynxsdk.lynx:lynx-service-image:3.2.0")
+    implementation("engineer.lynx.test2:lynx-service-image:3.3.0-alpha.5")
 
     // image-service dependencies, if not added, images cannot be loaded; if the host APP needs to use other image libraries, you can customize the image-service and remove this dependency
     implementation("com.facebook.fresco:fresco:2.3.0")
@@ -84,14 +84,18 @@ dependencies {
     implementation("com.facebook.fresco:animated-base:2.3.0")
 
     // integrating log-service
-    implementation("org.lynxsdk.lynx:lynx-service-log:3.2.0")
+    implementation("engineer.lynx.test2:lynx-service-log:3.3.0-alpha.5")
 
     // integrating http-service
-    implementation("org.lynxsdk.lynx:lynx-service-http:3.2.0")
+    implementation("engineer.lynx.test2:lynx-service-http:3.3.0-alpha.5")
 
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
 
     // add devtool's dependencies
-    implementation ("org.lynxsdk.lynx:lynx-devtool:3.2.0")
-    implementation ("org.lynxsdk.lynx:lynx-service-devtool:3.2.0")
+    implementation ("engineer.lynx.test2:lynx-devtool:3.3.0-alpha.5")
+    implementation ("engineer.lynx.test2:lynx-service-devtool:3.3.0-alpha.5")
+
+    implementation ("engineer.lynx.test2:xelement:3.3.0-alpha.5")
+    implementation ("engineer.lynx.test2:xelement-input:3.3.0-alpha.5")
+
 }
