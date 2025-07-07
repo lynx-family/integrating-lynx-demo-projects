@@ -1,0 +1,16 @@
+{
+  "modelVersion": "5.0.5",
+  "description": "Please describe the basic information.",
+  "overrides": {
+    "@ohos/imageknife": "3.2.6",
+    "@lynx/lynx": "0.0.1-alpha.1",
+    "@lynx/lynx_devtool": "0.0.1-alpha.1",
+    "@lynx/lynx_devtool_service": "0.0.1-alpha.1",
+    "@lynx/lynx_log_service": "0.0.1-alpha.1",
+    "@lynx/primjs": "0.0.1-alpha.5",
+  },
+  "devDependencies": {
+    "@ohos/hypium": "1.0.21",
+    "@ohos/hamock": "1.0.0",
+  }
+}
