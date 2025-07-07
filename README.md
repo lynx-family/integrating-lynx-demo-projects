@@ -12,7 +12,12 @@ This repository includes some demo projects of platform applications for getting
 - [`SwiftEmptyProject`] : Swift project with SwiftUI.
 - [`ObjcEmptyProject`] : Objective-C project.
 
+## harmony Empty Projects
+
+- [`HarmonyEmptyProject`] : ArkTs Harmony project.
+
 [`JavaEmptyProject`]: ./android/JavaEmptyProject
 [`KotlinEmptyProject`]: ./android/KotlinEmptyProject
 [`ObjcEmptyProject`]: ./ios/ObjcEmptyProject
 [`SwiftEmptyProject`]: ./ios/SwiftEmptyProject
+[`HarmonyEmptyProject`]: ./harmony/HarmonyEmptyProject
