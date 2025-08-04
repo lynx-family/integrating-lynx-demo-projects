@@ -3,14 +3,14 @@ source 'https://cdn.cocoapods.org/'
 platform :ios, '10.0'
 
 target 'Hello-Lynx' do
-  pod 'Lynx', '3.3.0', :subspecs => [
+  pod 'Lynx', '3.4.0-rc.0', :subspecs => [
     'Framework',
   ]
 
-  pod 'PrimJS', '2.13.2', :subspecs => ['quickjs', 'napi']
+  pod 'PrimJS', '2.14.0-rc.1', :subspecs => ['quickjs', 'napi']
 
   # integrate image-service, log-service, and http-service
-  pod 'LynxService', '3.3.0', :subspecs => [
+  pod 'LynxService', '3.4.0-rc.0', :subspecs => [
       'Image',
       'Log',
       'Http',
