@@ -18,7 +18,6 @@ target 'Hello-Lynx-OC' do
     'Framework',
   ]
 
-  pod 'PrimJS', '2.14.0-rc.1', :subspecs => ['quickjs', 'napi']
 
   # integrate image-service, log-service, and http-service
   pod 'LynxService', '3.4.0-rc.0', :subspecs => [
