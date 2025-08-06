@@ -29,4 +29,7 @@ target 'Hello-Lynx-OC' do
   # ImageService
   pod 'SDWebImage','5.15.5'
   pod 'SDWebImageWebPCoder', '0.11.0'
+
+  # XElement
+  pod 'XElement', '3.4.0-rc.0'
 end

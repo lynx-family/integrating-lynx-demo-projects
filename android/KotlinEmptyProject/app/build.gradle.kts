@@ -94,4 +94,8 @@ dependencies {
     // add devtool's dependencies
     implementation ("org.lynxsdk.lynx:lynx-devtool:3.4.0-rc.0")
     implementation ("org.lynxsdk.lynx:lynx-service-devtool:3.4.0-rc.0")
+
+    // add xelement's dependencies
+    implementation ("org.lynxsdk.lynx:xelement:3.4.0-rc.0")
+    implementation ("org.lynxsdk.lynx:xelement-input:3.4.0-rc.0")
 }
