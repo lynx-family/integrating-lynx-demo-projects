@@ -20,7 +20,7 @@ export default class EntryAbility extends UIAbility {
     LLog.useSysLog(true);
     LynxEnv.initialize(this.context);
     let options = new Map<string, string>();
-    options.set('App', 'LynxExplorer');
+    options.set('App', 'LynxHarmonyEmptyApp');
     options.set('AppVersion', '0.0.1');
     LynxEnv.setAppInfo(options);
     LynxEnv.enableDevtool(true);

@@ -1,6 +1,13 @@
 {
   "apiType": "stageMode",
   "buildOption": {
+    "arkOptions": {
+      "runtimeOnly": {
+        "packages": [
+          "@lynx/lynx_devtool"
+        ]
+      }
+    },
     "externalNativeOptions": {
       "path": "./src/main/cpp/CMakeLists.txt",
       "arguments": "",
@@ -19,11 +26,6 @@
             ]
           },
         },
-        "runtimeOnly": {
-          "packages": [
-            "@lynx/lynx_devtool"
-          ]
-        }
       }
     },
   ],
