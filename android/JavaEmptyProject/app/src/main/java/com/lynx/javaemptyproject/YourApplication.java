@@ -16,6 +16,7 @@ import com.lynx.service.log.LynxLogService;
 import com.lynx.service.devtool.LynxDevToolService;
 import com.lynx.tasm.LynxEnv;
 import com.lynx.tasm.service.LynxServiceCenter;
+import com.lynx.base.service.LynxBaseServiceCenter;
 
 public class YourApplication extends Application {
 
@@ -34,7 +35,7 @@ public class YourApplication extends Application {
         Fresco.initialize(getApplicationContext(), builder.build());
 
         LynxServiceCenter.inst().registerService(LynxImageService.getInstance());
-        LynxServiceCenter.inst().registerService(LynxLogService.INSTANCE);
+        LynxBaseServiceCenter.inst().registerService(LynxLogService.INSTANCE);
 
         // register devtool service
         LynxServiceCenter.inst().registerService(LynxDevToolService.getINSTANCE());
