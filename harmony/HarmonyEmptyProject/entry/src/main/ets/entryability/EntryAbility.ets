@@ -2,6 +2,7 @@ import { AbilityConstant, ConfigurationConstant, UIAbility, Want } from '@kit.Ab
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
 import { LLog, LynxEnv, LynxServiceCenter, LynxServiceType } from '@lynx/lynx';
+import { LynxBaseServiceCenter, LynxBaseServiceType } from '@lynx/lynx';
 import { LynxDevToolService } from '@lynx/lynx_devtool_service';
 import { LynxLogService } from '@lynx/lynx_log_service';
 import { LynxHttpService } from '@lynx/lynx_http_service';
@@ -14,7 +15,7 @@ export default class EntryAbility extends UIAbility {
     // Init LynxService start
     LynxServiceCenter.registerService(LynxServiceType.DevTool, LynxDevToolService.instance);
     LynxServiceCenter.registerService(LynxServiceType.Http, LynxHttpService.instance);
-    LynxServiceCenter.registerService(LynxServiceType.Log, LynxLogService.instance);
+    LynxBaseServiceCenter.registerService(LynxBaseServiceType.Log, LynxLogService.instance);
     // Init LynxService end
     // Init LynxEnv start
     LLog.useSysLog(true);
