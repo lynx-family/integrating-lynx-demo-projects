@@ -66,6 +66,7 @@ dependencies {
     debugImplementation libs.androidx.ui.test.manifest
     // lynx dependencies
     implementation "org.lynxsdk.lynx:lynx:3.4.1"
+    implementation "org.lynxsdk.lynx:lynx-base:3.4.1"
     implementation "org.lynxsdk.lynx:lynx-jssdk:3.4.1"
     implementation "org.lynxsdk.lynx:lynx-trace:3.4.1"
     implementation "org.lynxsdk.lynx:primjs:2.14.1"
