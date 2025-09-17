@@ -45,6 +45,7 @@ def main():
     unzip_and_copy_local_artifacts(zip_file_path, os.path.join(script_dir, "../app/libs"))
     config_file_entity = ConfigFileEntity('app/build.gradle', os.path.join(os.path.dirname(__file__), '..'))
     config_file_entity.add_replace_item(r'\s*implementation "org.lynxsdk.lynx:lynx:.*"', f'    implementation "org.lynxsdk.lynx:lynx:{version}"')
+    config_file_entity.add_replace_item(r'\s*implementation "org.lynxsdk.lynx:lynx-base:.*"', f'    implementation "org.lynxsdk.lynx:lynx-base:{version}"')
     config_file_entity.add_replace_item(r'\s*implementation "org.lynxsdk.lynx:lynx-jssdk:.*"', f'    implementation "org.lynxsdk.lynx:lynx-jssdk:{version}"')
     config_file_entity.add_replace_item(r'\s*implementation "org.lynxsdk.lynx:lynx-trace:.*"', f'    implementation "org.lynxsdk.lynx:lynx-trace:{version}"')
     config_file_entity.add_replace_item(r'\s*implementation "org.lynxsdk.lynx:lynx-service-image:.*"', f'    implementation "org.lynxsdk.lynx:lynx-service-image:{version}"')
