@@ -14,7 +14,6 @@ import com.lynx.service.image.LynxImageService
 import com.lynx.service.log.LynxLogService
 import com.lynx.tasm.LynxEnv
 import com.lynx.tasm.service.LynxServiceCenter
-import com.lynx.base.service.LynxBaseServiceCenter
 import com.lynx.service.http.LynxHttpService
 
 class YourApplication : Application() {
@@ -32,7 +31,7 @@ class YourApplication : Application() {
         Fresco.initialize(applicationContext, builder.build())
 
         LynxServiceCenter.inst().registerService(LynxImageService.getInstance())
-        LynxBaseServiceCenter.inst().registerService(LynxLogService)
+        LynxServiceCenter.inst().registerService(LynxLogService)
         LynxServiceCenter.inst().registerService(LynxHttpService)
 
         // register devtool service
