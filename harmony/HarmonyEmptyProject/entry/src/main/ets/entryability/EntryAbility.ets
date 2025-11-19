@@ -2,7 +2,7 @@ import { AbilityConstant, ConfigurationConstant, UIAbility, Want } from '@kit.Ab
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
 import { LLog, LynxEnv, LynxServiceCenter, LynxServiceType } from '@lynx/lynx';
-import { LynxBaseServiceCenter, LynxBaseServiceType } from '@lynx/lynx';
+import { LynxBaseServiceCenter, LynxBaseServiceType } from '@lynx/lynx_base';
 import { LynxDevToolService } from '@lynx/lynx_devtool_service';
 import { LynxLogService } from '@lynx/lynx_log_service';
 import { LynxHttpService } from '@lynx/lynx_http_service';
