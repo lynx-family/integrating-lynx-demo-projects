@@ -18,6 +18,9 @@ target 'Hello-Lynx-OC' do
     'Framework',
   ]
 
+  pod 'LynxBase', '3.6.0', :subspecs => [
+    'Framework',
+  ]
 
   # integrate image-service, log-service, and http-service
   pod 'LynxService', '3.6.0', :subspecs => [
