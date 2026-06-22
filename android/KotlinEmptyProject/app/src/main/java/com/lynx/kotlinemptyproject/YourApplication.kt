@@ -35,7 +35,7 @@ class YourApplication : Application() {
         LynxServiceCenter.inst().registerService(LynxHttpService)
 
         // register devtool service
-        LynxServiceCenter.inst().registerService(LynxDevToolService)
+        LynxServiceCenter.inst().registerService(LynxDevToolService.INSTANCE)
     }
 
     private fun initLynxEnv() {

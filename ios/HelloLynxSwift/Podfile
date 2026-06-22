@@ -3,13 +3,14 @@ source 'https://cdn.cocoapods.org/'
 platform :ios, '10.0'
 
 target 'Hello-Lynx' do
-  pod 'Lynx', '3.6.0', :subspecs => [
+  pod 'Lynx', '3.8.0', :subspecs => [
     'Framework',
   ]
 
+  pod 'PrimJS', '3.8.0', :subspecs => ['quickjs', 'napi']
 
   # integrate image-service, log-service, and http-service
-  pod 'LynxService', '3.6.0', :subspecs => [
+  pod 'LynxService', '3.8.0', :subspecs => [
       'Image',
       'Log',
       'Http',
@@ -20,5 +21,5 @@ target 'Hello-Lynx' do
   pod 'SDWebImageWebPCoder', '0.11.0'
 
   # XElement
-  pod 'XElement', '3.6.0'
+  pod 'XElement', '3.8.0'
 end
