@@ -1,0 +1,27 @@
+android/JavaEmptyProject/settings.gradle
+  s_851354f5167214::t_f39c3dcb2f4fa0 18
+  s_851354f5167214::t_6239e01f6da967 17,19-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "124167d4a67254d763bebfc9a94a522cb96d94df",
+  "prompts": {},
+  "humans": {
+    "h_7a1e47632c7d77": {
+      "author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_851354f5167214": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a423264c2d0de288444a2f5",
+        "model": "gpt-5.2__dev"
+      },
+      "human_author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}
