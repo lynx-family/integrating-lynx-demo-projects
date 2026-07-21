@@ -68,13 +68,13 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // lynx dependencies
-    implementation("org.lynxsdk.lynx:lynx:3.8.0")
-    implementation("org.lynxsdk.lynx:lynx-jssdk:3.8.0")
-    implementation("org.lynxsdk.lynx:lynx-trace:3.8.0")
-    implementation("org.lynxsdk.lynx:primjs:3.8.0")
+    implementation("org.lynxsdk.lynx:lynx:4.0.0")
+    implementation("org.lynxsdk.lynx:lynx-jssdk:4.0.0")
+    implementation("org.lynxsdk.lynx:lynx-trace:4.0.0")
+    implementation("org.lynxsdk.lynx:primjs:4.0.0")
 
     // integrating image-service
-    implementation("org.lynxsdk.lynx:lynx-service-image:3.8.0")
+    implementation("org.lynxsdk.lynx:lynx-service-image:4.0.0")
 
     // image-service dependencies, if not added, images cannot be loaded; if the host APP needs to use other image libraries, you can customize the image-service and remove this dependency
     implementation("com.facebook.fresco:fresco:2.3.0")
@@ -84,22 +84,22 @@ dependencies {
     implementation("com.facebook.fresco:animated-base:2.3.0")
 
     // integrating log-service
-    implementation("org.lynxsdk.lynx:lynx-service-log:3.8.0")
+    implementation("org.lynxsdk.lynx:lynx-service-log:4.0.0")
 
     // integrating http-service
-    implementation("org.lynxsdk.lynx:lynx-service-http:3.8.0")
+    implementation("org.lynxsdk.lynx:lynx-service-http:4.0.0")
 
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
 
     // add devtool's dependencies
-    implementation("org.lynxsdk.lynx:lynx-devtool:3.8.0")
-    implementation("org.lynxsdk.lynx:lynx-service-devtool:3.8.0")
+    implementation("org.lynxsdk.lynx:lynx-devtool:4.0.0")
+    implementation("org.lynxsdk.lynx:lynx-service-devtool:4.0.0")
 
     // integrating XElement
-    implementation("org.lynxsdk.lynx:xelement:3.8.0")
-    implementation("org.lynxsdk.lynx:xelement-input:3.8.0")
-    implementation("org.lynxsdk.lynx:xelement-overlay:3.8.0")
-    implementation("org.lynxsdk.lynx:xelement-svg:3.8.0")
-    implementation("org.lynxsdk.lynx:servalsvg:0.0.1-alpha.3")
-    implementation("org.lynxsdk.lynx:xelement-refresh:3.8.0")
+    implementation("org.lynxsdk.lynx:xelement:4.0.0")
+    implementation("org.lynxsdk.lynx:xelement-input:4.0.0")
+    implementation("org.lynxsdk.lynx:xelement-overlay:4.0.0")
+    implementation("org.lynxsdk.lynx:xelement-svg:4.0.0")
+    implementation("org.lynxsdk.lynx:servalsvg:0.0.2")
+    implementation("org.lynxsdk.lynx:xelement-refresh:4.0.0")
 }

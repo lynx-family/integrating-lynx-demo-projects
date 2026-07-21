@@ -11,58 +11,58 @@ PODS:
   - libwebp/sharpyuv (1.5.0)
   - libwebp/webp (1.5.0):
     - libwebp/sharpyuv
-  - Lynx (3.8.0):
-    - Lynx/Framework (= 3.8.0)
-  - Lynx/Framework (3.8.0):
+  - Lynx (4.0.0):
+    - Lynx/Framework (= 4.0.0)
+  - Lynx/Framework (4.0.0):
     - Lynx/ReleaseResource
     - LynxBase/Framework
     - LynxServiceAPI
     - PrimJS/napi/env
     - PrimJS/napi/jsc
     - PrimJS/napi/quickjs
-    - PrimJS/quickjs (= 3.8.0)
-  - Lynx/ReleaseResource (3.8.0)
-  - LynxBase (3.8.0):
-    - LynxBase/Framework (= 3.8.0)
-  - LynxBase/Framework (3.8.0):
+    - PrimJS/quickjs (= 4.0.0)
+  - Lynx/ReleaseResource (4.0.0)
+  - LynxBase (4.0.0):
+    - LynxBase/Framework (= 4.0.0)
+  - LynxBase/Framework (4.0.0):
     - LynxServiceAPI/Core
-  - LynxService/Http (3.8.0):
-    - Lynx (= 3.8.0)
-    - LynxServiceAPI (= 3.8.0)
-  - LynxService/Image (3.8.0):
-    - Lynx (= 3.8.0)
-    - LynxServiceAPI (= 3.8.0)
+  - LynxService/Http (4.0.0):
+    - Lynx (= 4.0.0)
+    - LynxServiceAPI (= 4.0.0)
+  - LynxService/Image (4.0.0):
+    - Lynx (= 4.0.0)
+    - LynxServiceAPI (= 4.0.0)
     - SDWebImage (= 5.15.5)
     - SDWebImageWebPCoder (= 0.11.0)
-  - LynxService/Log (3.8.0):
-    - Lynx (= 3.8.0)
-    - LynxBase (= 3.8.0)
-    - LynxServiceAPI (= 3.8.0)
-  - LynxServiceAPI (3.8.0):
-    - LynxServiceAPI/Core (= 3.8.0)
-  - LynxServiceAPI/Core (3.8.0)
+  - LynxService/Log (4.0.0):
+    - Lynx (= 4.0.0)
+    - LynxBase (= 4.0.0)
+    - LynxServiceAPI (= 4.0.0)
+  - LynxServiceAPI (4.0.0):
+    - LynxServiceAPI/Core (= 4.0.0)
+  - LynxServiceAPI/Core (4.0.0)
   - MJRefresh (3.7.6)
-  - PrimJS/log (3.8.0)
-  - PrimJS/napi (3.8.0):
-    - PrimJS/napi/adapter (= 3.8.0)
-    - PrimJS/napi/core (= 3.8.0)
-    - PrimJS/napi/env (= 3.8.0)
-    - PrimJS/napi/jsc (= 3.8.0)
-    - PrimJS/napi/quickjs (= 3.8.0)
-  - PrimJS/napi/adapter (3.8.0):
+  - PrimJS/log (4.0.0)
+  - PrimJS/napi (4.0.0):
+    - PrimJS/napi/adapter (= 4.0.0)
+    - PrimJS/napi/core (= 4.0.0)
+    - PrimJS/napi/env (= 4.0.0)
+    - PrimJS/napi/jsc (= 4.0.0)
+    - PrimJS/napi/quickjs (= 4.0.0)
+  - PrimJS/napi/adapter (4.0.0):
     - PrimJS/napi/core
     - PrimJS/napi/env
-  - PrimJS/napi/core (3.8.0)
-  - PrimJS/napi/env (3.8.0):
+  - PrimJS/napi/core (4.0.0)
+  - PrimJS/napi/env (4.0.0):
     - PrimJS/napi/core
-  - PrimJS/napi/jsc (3.8.0):
+  - PrimJS/napi/jsc (4.0.0):
     - PrimJS/log
     - PrimJS/napi/core
     - PrimJS/quickjs
-  - PrimJS/napi/quickjs (3.8.0):
+  - PrimJS/napi/quickjs (4.0.0):
     - PrimJS/napi/core
     - PrimJS/quickjs
-  - PrimJS/quickjs (3.8.0):
+  - PrimJS/quickjs (4.0.0):
     - PrimJS/log
   - SDWebImage (5.15.5):
     - SDWebImage/Core (= 5.15.5)
@@ -71,39 +71,39 @@ PODS:
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.15)
   - ServalSVG (0.1.1)
-  - XElement (3.8.0):
-    - XElement/Behavior (= 3.8.0)
-    - XElement/Input (= 3.8.0)
-    - XElement/Overlay (= 3.8.0)
-    - XElement/Refresh (= 3.8.0)
-    - XElement/SVG (= 3.8.0)
-  - XElement/Behavior (3.8.0):
-    - Lynx (= 3.8.0)
+  - XElement (4.0.0):
+    - XElement/Behavior (= 4.0.0)
+    - XElement/Input (= 4.0.0)
+    - XElement/Overlay (= 4.0.0)
+    - XElement/Refresh (= 4.0.0)
+    - XElement/SVG (= 4.0.0)
+  - XElement/Behavior (4.0.0):
+    - Lynx (= 4.0.0)
     - XElement/Input
     - XElement/Overlay
     - XElement/Refresh
     - XElement/SVG
-  - XElement/Input (3.8.0):
-    - Lynx (= 3.8.0)
-  - XElement/Overlay (3.8.0):
-    - Lynx (= 3.8.0)
-  - XElement/Refresh (3.8.0):
-    - Lynx (= 3.8.0)
+  - XElement/Input (4.0.0):
+    - Lynx (= 4.0.0)
+  - XElement/Overlay (4.0.0):
+    - Lynx (= 4.0.0)
+  - XElement/Refresh (4.0.0):
+    - Lynx (= 4.0.0)
     - MJRefresh (>= 3.6.1)
-  - XElement/SVG (3.8.0):
-    - Lynx (= 3.8.0)
+  - XElement/SVG (4.0.0):
+    - Lynx (= 4.0.0)
     - ServalSVG (>= 0.0.17)
 
 DEPENDENCIES:
-  - Lynx/Framework (= 3.8.0)
-  - LynxService/Http (= 3.8.0)
-  - LynxService/Image (= 3.8.0)
-  - LynxService/Log (= 3.8.0)
-  - PrimJS/napi (= 3.8.0)
-  - PrimJS/quickjs (= 3.8.0)
+  - Lynx/Framework (= 4.0.0)
+  - LynxService/Http (= 4.0.0)
+  - LynxService/Image (= 4.0.0)
+  - LynxService/Log (= 4.0.0)
+  - PrimJS/napi (= 4.0.0)
+  - PrimJS/quickjs (= 4.0.0)
   - SDWebImage (= 5.15.5)
   - SDWebImageWebPCoder (= 0.11.0)
-  - XElement (= 3.8.0)
+  - XElement (= 4.0.0)
 
 SPEC REPOS:
   trunk:
