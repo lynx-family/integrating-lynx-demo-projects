@@ -1,0 +1,39 @@
+ios/HelloLynxObjc/Podfile
+  s_6830b86b0fdb6a::t_5e73ff226f6a74 17
+  h_7a1e47632c7d77 21,24,35
+harmony/HarmonyEmptyProject/entry/oh-package.json5
+  h_7a1e47632c7d77 12-18
+android/KotlinEmptyProject/app/build.gradle.kts
+  h_7a1e47632c7d77 71-74,77,87,90,95-96,99-104
+android/JavaEmptyProject/app/build.gradle
+  h_7a1e47632c7d77 68-71,74,86,89,92-93,96-101
+harmony/HarmonyEmptyProject/oh-package.json5
+  h_7a1e47632c7d77 6-12
+ios/HelloLynxSwift/Podfile
+  h_7a1e47632c7d77 6,10,13,24
+harmony/HarmonyEmptyProject/entry/oh-package-lock.json5
+  h_7a1e47632c7d77 9-15,18-20,23,25,27,31,34,36,38,44,46,48,51-52,56,58,60,63,66,68,70,73,76,78,80,83,86,88,90,110,116,122
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "f515a5ea9c577c76ebf5e273066ce09336f073e0",
+  "prompts": {},
+  "humans": {
+    "h_7a1e47632c7d77": {
+      "author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_6830b86b0fdb6a": {
+      "agent_id": {
+        "tool": "trae-cue",
+        "id": "ai_tab-icr-9380374d-bbf5-4883-92d0-c6b864e44de9",
+        "model": "default"
+      },
+      "human_author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}
