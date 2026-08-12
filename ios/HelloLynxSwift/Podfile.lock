@@ -11,58 +11,65 @@ PODS:
   - libwebp/sharpyuv (1.5.0)
   - libwebp/webp (1.5.0):
     - libwebp/sharpyuv
-  - Lynx (3.8.0):
-    - Lynx/Framework (= 3.8.0)
-  - Lynx/Framework (3.8.0):
+  - Lynx (4.1.0):
+    - Lynx/Framework (= 4.1.0)
+  - Lynx/Framework (4.1.0):
+    - Lynx/Gfx
     - Lynx/ReleaseResource
     - LynxBase/Framework
     - LynxServiceAPI
     - PrimJS/napi/env
     - PrimJS/napi/jsc
     - PrimJS/napi/quickjs
-    - PrimJS/quickjs (= 3.8.0)
-  - Lynx/ReleaseResource (3.8.0)
-  - LynxBase (3.8.0):
-    - LynxBase/Framework (= 3.8.0)
-  - LynxBase/Framework (3.8.0):
+    - PrimJS/quickjs (= 4.1.1)
+  - Lynx/Gfx (4.1.0):
+    - LynxBase/Framework
+  - Lynx/ReleaseResource (4.1.0)
+  - LynxBase (4.1.0):
+    - LynxBase/Framework (= 4.1.0)
+  - LynxBase/Framework (4.1.0):
     - LynxServiceAPI/Core
-  - LynxService/Http (3.8.0):
-    - Lynx (= 3.8.0)
-    - LynxServiceAPI (= 3.8.0)
-  - LynxService/Image (3.8.0):
-    - Lynx (= 3.8.0)
-    - LynxServiceAPI (= 3.8.0)
+  - LynxService/Http (4.1.0):
+    - Lynx (= 4.1.0)
+    - LynxServiceAPI (= 4.1.0)
+  - LynxService/Image (4.1.0):
+    - Lynx (= 4.1.0)
+    - LynxServiceAPI (= 4.1.0)
     - SDWebImage (= 5.15.5)
     - SDWebImageWebPCoder (= 0.11.0)
-  - LynxService/Log (3.8.0):
-    - Lynx (= 3.8.0)
-    - LynxBase (= 3.8.0)
-    - LynxServiceAPI (= 3.8.0)
-  - LynxServiceAPI (3.8.0):
-    - LynxServiceAPI/Core (= 3.8.0)
-  - LynxServiceAPI/Core (3.8.0)
+  - LynxService/Log (4.1.0):
+    - Lynx (= 4.1.0)
+    - LynxBase (= 4.1.0)
+    - LynxServiceAPI (= 4.1.0)
+  - LynxServiceAPI (4.1.0):
+    - LynxServiceAPI/Core (= 4.1.0)
+    - LynxServiceAPI/Native (= 4.1.0)
+  - LynxServiceAPI/Core (4.1.0):
+    - LynxServiceAPI/Native
+  - LynxServiceAPI/Native (4.1.0)
+  - LynxTextra (0.2.1)
   - MJRefresh (3.7.6)
-  - PrimJS/log (3.8.0)
-  - PrimJS/napi (3.8.0):
-    - PrimJS/napi/adapter (= 3.8.0)
-    - PrimJS/napi/core (= 3.8.0)
-    - PrimJS/napi/env (= 3.8.0)
-    - PrimJS/napi/jsc (= 3.8.0)
-    - PrimJS/napi/quickjs (= 3.8.0)
-  - PrimJS/napi/adapter (3.8.0):
+  - PrimJS/log (4.1.1)
+  - PrimJS/napi (4.1.1):
+    - PrimJS/napi/adapter (= 4.1.1)
+    - PrimJS/napi/core (= 4.1.1)
+    - PrimJS/napi/env (= 4.1.1)
+    - PrimJS/napi/jsc (= 4.1.1)
+    - PrimJS/napi/quickjs (= 4.1.1)
+  - PrimJS/napi/adapter (4.1.1):
     - PrimJS/napi/core
     - PrimJS/napi/env
-  - PrimJS/napi/core (3.8.0)
-  - PrimJS/napi/env (3.8.0):
+  - PrimJS/napi/core (4.1.1)
+  - PrimJS/napi/env (4.1.1):
     - PrimJS/napi/core
-  - PrimJS/napi/jsc (3.8.0):
+  - PrimJS/napi/jsc (4.1.1):
     - PrimJS/log
     - PrimJS/napi/core
     - PrimJS/quickjs
-  - PrimJS/napi/quickjs (3.8.0):
+  - PrimJS/napi/quickjs (4.1.1):
     - PrimJS/napi/core
     - PrimJS/quickjs
-  - PrimJS/quickjs (3.8.0):
+  - PrimJS/quickjs (4.1.1):
     - PrimJS/log
   - SDWebImage (5.15.5):
     - SDWebImage/Core (= 5.15.5)
@@ -70,68 +77,101 @@ PODS:
   - SDWebImageWebPCoder (0.11.0):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.15)
-  - ServalSVG (0.1.1)
-  - XElement (3.8.0):
-    - XElement/Behavior (= 3.8.0)
-    - XElement/Input (= 3.8.0)
-    - XElement/Overlay (= 3.8.0)
-    - XElement/Refresh (= 3.8.0)
-    - XElement/SVG (= 3.8.0)
-  - XElement/Behavior (3.8.0):
-    - Lynx (= 3.8.0)
+  - ServalMarkdown (0.1.1):
+    - LynxTextra
+  - ServalSVG (0.2.4)
+  - XElement (4.1.0):
+    - XElement/Behavior (= 4.1.0)
+    - XElement/BlurView (= 4.1.0)
+    - XElement/Input (= 4.1.0)
+    - XElement/Markdown (= 4.1.0)
+    - XElement/Overlay (= 4.1.0)
+    - XElement/Refresh (= 4.1.0)
+    - XElement/ScrollCoordinator (= 4.1.0)
+    - XElement/SVG (= 4.1.0)
+    - XElement/Video (= 4.1.0)
+    - XElement/ViewPager (= 4.1.0)
+    - XElement/WebView (= 4.1.0)
+  - XElement/Behavior (4.1.0):
+    - Lynx (= 4.1.0)
+    - XElement/BlurView
     - XElement/Input
+    - XElement/Markdown
     - XElement/Overlay
     - XElement/Refresh
+    - XElement/ScrollCoordinator
     - XElement/SVG
-  - XElement/Input (3.8.0):
-    - Lynx (= 3.8.0)
-  - XElement/Overlay (3.8.0):
-    - Lynx (= 3.8.0)
-  - XElement/Refresh (3.8.0):
-    - Lynx (= 3.8.0)
+    - XElement/Video
+    - XElement/ViewPager
+    - XElement/WebView
+  - XElement/BlurView (4.1.0):
+    - Lynx (= 4.1.0)
+  - XElement/Input (4.1.0):
+    - Lynx (= 4.1.0)
+  - XElement/Markdown (4.1.0):
+    - Lynx (= 4.1.0)
+    - ServalMarkdown (= 0.1.1)
+  - XElement/Overlay (4.1.0):
+    - Lynx (= 4.1.0)
+  - XElement/Refresh (4.1.0):
+    - Lynx (= 4.1.0)
     - MJRefresh (>= 3.6.1)
-  - XElement/SVG (3.8.0):
-    - Lynx (= 3.8.0)
+  - XElement/ScrollCoordinator (4.1.0):
+    - Lynx (= 4.1.0)
+    - XElement/ViewPager
+  - XElement/SVG (4.1.0):
+    - Lynx (= 4.1.0)
     - ServalSVG (>= 0.0.17)
+  - XElement/Video (4.1.0):
+    - Lynx (= 4.1.0)
+  - XElement/ViewPager (4.1.0):
+    - Lynx (= 4.1.0)
+  - XElement/WebView (4.1.0):
+    - Lynx (= 4.1.0)
 
 DEPENDENCIES:
-  - Lynx/Framework (= 3.8.0)
-  - LynxService/Http (= 3.8.0)
-  - LynxService/Image (= 3.8.0)
-  - LynxService/Log (= 3.8.0)
-  - PrimJS/napi (= 3.8.0)
-  - PrimJS/quickjs (= 3.8.0)
+  - Lynx/Framework (= 4.1.0)
+  - LynxService/Http (= 4.1.0)
+  - LynxService/Image (= 4.1.0)
+  - LynxService/Log (= 4.1.0)
+  - PrimJS/napi (= 4.1.1)
+  - PrimJS/quickjs (= 4.1.1)
   - SDWebImage (= 5.15.5)
   - SDWebImageWebPCoder (= 0.11.0)
-  - XElement (= 3.8.0)
+  - XElement (= 4.1.0)
 
 SPEC REPOS:
-  trunk:
-    - libwebp
+  https://github.com/lynx-family/Specs.git:
     - Lynx
     - LynxBase
     - LynxService
     - LynxServiceAPI
+    - XElement
+  trunk:
+    - libwebp
+    - LynxTextra
     - MJRefresh
     - PrimJS
     - SDWebImage
     - SDWebImageWebPCoder
+    - ServalMarkdown
     - ServalSVG
-    - XElement
 
 SPEC CHECKSUMS:
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
-  Lynx: afd5151ec6a97a778d0e0e3300b8b3fc3126e6c1
-  LynxBase: 49d9282b68f130bedabb42d689695636e0deffac
-  LynxService: ef99461cec7a8375b847c87d4c0cdc727dfa9cda
-  LynxServiceAPI: 9c6f5d64e123d8e8248b08285ed6276bd7b5f589
+  Lynx: b9a0812cb5b0f1ff6efba8cc1d1d5c094a23f632
+  LynxBase: 4d2fdb403f161e8fce8af3db8bddee50c8f1fe3e
+  LynxService: 4e390c8080eff4bc3d3f4e2133379c2942191c1b
+  LynxServiceAPI: 79446ba6dcea4353b8e2e5b77ec9f34603c0a054
+  LynxTextra: 82539791caa56e964cde427f05cff24ed3736d36
   MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
-  PrimJS: 87bfb25ee0e8af0a705f18720e9fdd23e598b65b
+  PrimJS: 2bb7f0e0c314cc81f6dc53aa814082b66f149e7c
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
   SDWebImageWebPCoder: 295a6573c512f54ad2dd58098e64e17dcf008499
-  ServalSVG: 6990830fdd5c1e7d545fc8c842a98bea6007dd86
-  XElement: 852aab5cdbc80b561877735a29293b93a07e8dd3
+  ServalMarkdown: 4e0401818bc34bbb7659270e2df775119ccc029f
+  ServalSVG: 19bf88f72dae928c28a744c9b91475a3691ded42
+  XElement: 81b11cf09c9b2c773bfc3b9b631811502328016b
 
-PODFILE CHECKSUM: 84a8ec962585f32a9e708d3870d3766bfd2b67aa
+PODFILE CHECKSUM: 48b3aef06b85388b98d2e9527622934b9787e4c7
 
 COCOAPODS: 1.16.2
