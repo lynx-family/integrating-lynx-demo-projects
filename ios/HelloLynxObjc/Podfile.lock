@@ -11,9 +11,9 @@ PODS:
   - libwebp/sharpyuv (1.5.0)
   - libwebp/webp (1.5.0):
     - libwebp/sharpyuv
-  - Lynx (4.0.0):
-    - Lynx/Framework (= 4.0.0)
-  - Lynx/Framework (4.0.0):
+  - Lynx (4.0.3):
+    - Lynx/Framework (= 4.0.3)
+  - Lynx/Framework (4.0.3):
     - Lynx/ReleaseResource
     - LynxBase/Framework
     - LynxServiceAPI
@@ -21,26 +21,26 @@ PODS:
     - PrimJS/napi/jsc
     - PrimJS/napi/quickjs
     - PrimJS/quickjs (= 4.0.0)
-  - Lynx/ReleaseResource (4.0.0)
-  - LynxBase (4.0.0):
-    - LynxBase/Framework (= 4.0.0)
-  - LynxBase/Framework (4.0.0):
+  - Lynx/ReleaseResource (4.0.3)
+  - LynxBase (4.0.3):
+    - LynxBase/Framework (= 4.0.3)
+  - LynxBase/Framework (4.0.3):
     - LynxServiceAPI/Core
-  - LynxService/Http (4.0.0):
-    - Lynx (= 4.0.0)
-    - LynxServiceAPI (= 4.0.0)
-  - LynxService/Image (4.0.0):
-    - Lynx (= 4.0.0)
-    - LynxServiceAPI (= 4.0.0)
+  - LynxService/Http (4.0.3):
+    - Lynx (= 4.0.3)
+    - LynxServiceAPI (= 4.0.3)
+  - LynxService/Image (4.0.3):
+    - Lynx (= 4.0.3)
+    - LynxServiceAPI (= 4.0.3)
     - SDWebImage (= 5.15.5)
     - SDWebImageWebPCoder (= 0.11.0)
-  - LynxService/Log (4.0.0):
-    - Lynx (= 4.0.0)
-    - LynxBase (= 4.0.0)
-    - LynxServiceAPI (= 4.0.0)
-  - LynxServiceAPI (4.0.0):
-    - LynxServiceAPI/Core (= 4.0.0)
-  - LynxServiceAPI/Core (4.0.0)
+  - LynxService/Log (4.0.3):
+    - Lynx (= 4.0.3)
+    - LynxBase (= 4.0.3)
+    - LynxServiceAPI (= 4.0.3)
+  - LynxServiceAPI (4.0.3):
+    - LynxServiceAPI/Core (= 4.0.3)
+  - LynxServiceAPI/Core (4.0.3)
   - MJRefresh (3.7.6)
   - PrimJS/log (4.0.0)
   - PrimJS/napi (4.0.0):
@@ -71,39 +71,39 @@ PODS:
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.15)
   - ServalSVG (0.1.1)
-  - XElement (4.0.0):
-    - XElement/Behavior (= 4.0.0)
-    - XElement/Input (= 4.0.0)
-    - XElement/Overlay (= 4.0.0)
-    - XElement/Refresh (= 4.0.0)
-    - XElement/SVG (= 4.0.0)
-  - XElement/Behavior (4.0.0):
-    - Lynx (= 4.0.0)
+  - XElement (4.0.3):
+    - XElement/Behavior (= 4.0.3)
+    - XElement/Input (= 4.0.3)
+    - XElement/Overlay (= 4.0.3)
+    - XElement/Refresh (= 4.0.3)
+    - XElement/SVG (= 4.0.3)
+  - XElement/Behavior (4.0.3):
+    - Lynx (= 4.0.3)
     - XElement/Input
     - XElement/Overlay
     - XElement/Refresh
     - XElement/SVG
-  - XElement/Input (4.0.0):
-    - Lynx (= 4.0.0)
-  - XElement/Overlay (4.0.0):
-    - Lynx (= 4.0.0)
-  - XElement/Refresh (4.0.0):
-    - Lynx (= 4.0.0)
+  - XElement/Input (4.0.3):
+    - Lynx (= 4.0.3)
+  - XElement/Overlay (4.0.3):
+    - Lynx (= 4.0.3)
+  - XElement/Refresh (4.0.3):
+    - Lynx (= 4.0.3)
     - MJRefresh (>= 3.6.1)
-  - XElement/SVG (4.0.0):
-    - Lynx (= 4.0.0)
+  - XElement/SVG (4.0.3):
+    - Lynx (= 4.0.3)
     - ServalSVG (>= 0.0.17)
 
 DEPENDENCIES:
-  - Lynx/Framework (= 4.0.0)
-  - LynxService/Http (= 4.0.0)
-  - LynxService/Image (= 4.0.0)
-  - LynxService/Log (= 4.0.0)
+  - Lynx/Framework (= 4.0.3)
+  - LynxService/Http (= 4.0.3)
+  - LynxService/Image (= 4.0.3)
+  - LynxService/Log (= 4.0.3)
   - PrimJS/napi (= 4.0.0)
   - PrimJS/quickjs (= 4.0.0)
   - SDWebImage (= 5.15.5)
   - SDWebImageWebPCoder (= 0.11.0)
-  - XElement (= 4.0.0)
+  - XElement (= 4.0.3)
 
 SPEC REPOS:
   trunk:
