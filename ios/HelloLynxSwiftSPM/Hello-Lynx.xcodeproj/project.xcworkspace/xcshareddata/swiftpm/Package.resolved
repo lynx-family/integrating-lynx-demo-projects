@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "lynx-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lynx-family/lynx-spm.git",
+      "state" : {
+        "revision" : "055ba1651421b74e69f2b40c4779d588fffbcd83",
+        "version" : "4.3.0-rc.1"
+      }
+    }
+  ],
+  "version" : 2
+}
